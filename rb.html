@@ -23,14 +23,21 @@
 </head>
 
 <body style="margin-top: 20px;">
-  <div class="container border border-dark">
+  <div class="container">
     <div class="row">
-      <div class="col-2 border-end border-bottom border-dark">Keyword</div>
+      <div class="col-12">
+        <h1>Ruby Keywords</h1>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid border border-dark">
+    <div class="row">
+      <div class="col-1 border-end border-bottom border-dark">Keyword</div>
       <div class="col-5 border-end border-bottom border-dark">Description</div>
-      <div class="col-5 border-end border-bottom border-dark">Example</div>
+      <div class="col-6 border-end border-bottom border-dark">Example</div>
     </div>
     <div class="row">
-      <div class="col-2 border-end border-bottom border-dark">
+      <div class="col-1 border-end border-bottom border-dark">
         <code>true</code>, <code>false</code>
       </div>
       <div class="col-5 border-end border-bottom border-dark">
@@ -38,7 +45,7 @@
         tries the <code>elsif</code> branches,
         and finishes with <code>else</code> branch (until one branch evaluates to <code>else</code>)
       </div>
-      <div class="col-5 border-end border-bottom border-dark">
+      <div class="col-6 border-end border-bottom border-dark">
         <textarea class="language-ruby code-block">
 ruby_is_the_best = true
 squares_have_three_sides = false          
@@ -46,7 +53,7 @@ squares_have_three_sides = false
       </div>
     </div>
     <div class="row">
-      <div class="col-2 border-end border-bottom border-dark">
+      <div class="col-1 border-end border-bottom border-dark">
         <code>if</code>, <code>elsif</code>, <code>else</code>
       </div>
       <div class="col-5 border-end border-bottom border-dark">
@@ -57,7 +64,7 @@ squares_have_three_sides = false
         In this example, the string <code>"Your condition was true!"</code> will print because the condition
         <code>number == 10</code> is <code>true</code>.
       </div>
-      <div class="col-5 border-end border-bottom border-dark">
+      <div class="col-6 border-end border-bottom border-dark">
         <textarea class="language-ruby code-block">
 number = 10
 if number == 10
@@ -67,7 +74,7 @@ end
       </div>
     </div>
     <div class="row">
-      <div class="col-2 border-end border-bottom border-dark">
+      <div class="col-1 border-end border-bottom border-dark">
         <code>nil</code>
       </div>
       <div class="col-5 border-end border-bottom border-dark">
@@ -89,7 +96,7 @@ end
           </li>
         </ul>
       </div>
-      <div class="col-5 border-end border-bottom border-dark">
+      <div class="col-6 border-end border-bottom border-dark">
         <textarea class="language-ruby code-block">
 letters = ["a", "b", "c"]
 letters[5]
@@ -98,14 +105,14 @@ letters[5]
       </div>
     </div>
     <div class="row">
-      <div class="col-2 border-end border-bottom border-dark">
+      <div class="col-1 border-end border-bottom border-dark">
         <code>||</code>
       </div>
       <div class="col-5 border-end border-bottom border-dark">
         The <code>||</code> (pronounced "or") operator is a logical operator which returns <code>true</code>
         if either of the expressions on left-hand side or right-hand side evaluate to <code>true</code>.
       </div>
-      <div class="col-5 border-end border-bottom border-dark">
+      <div class="col-6 border-end border-bottom border-dark">
         <textarea class="language-ruby code-block">
 grade1 = 50
 grade2 = 30
@@ -118,7 +125,7 @@ end
       </div>
     </div>
     <div class="row">
-      <div class="col-2 border-end border-bottom border-dark">
+      <div class="col-1 border-end border-bottom border-dark">
         <code>&&</code>
       </div>
       <div class="col-5 border-end border-bottom border-dark">
@@ -126,7 +133,7 @@ end
         <code>true</code>
         only if both expressions on either side of <code>&&</code> evaluates to <code>true</code>.
       </div>
-      <div class="col-5 border-end border-bottom border-dark">
+      <div class="col-6 border-end border-bottom border-dark">
           <textarea class="language-ruby code-block">
 if score1 > score2 && score1 > score3
   print "Score 1 is the greatest in value."
@@ -137,7 +144,7 @@ end
       </div>
     </div>
     <div class="row">
-      <div class="col-2 border-end border-bottom border-dark">
+      <div class="col-1 border-end border-bottom border-dark">
         <code>==</code>
       </div>
       <div class="col-5 border-end border-bottom border-dark">
@@ -145,7 +152,7 @@ end
         values are the same.
         Otherwise, it returns <code>false</code>.
       </div>
-      <div class="col-5 border-end border-bottom border-dark">
+      <div class="col-6 border-end border-bottom border-dark">
           <textarea class="language-ruby code-block">
 age = 30
 if age == 15 * 2
@@ -155,7 +162,7 @@ end
       </div>
     </div>
     <div class="row">
-      <div class="col-2 border-end border-bottom border-dark">
+      <div class="col-1 border-end border-bottom border-dark">
         <code>def</code>
       </div>
       <div class="col-5 border-end border-bottom border-dark">
@@ -163,7 +170,7 @@ end
         A <code>def</code> requires a method name and an <code>end</code> to denote where the method ends.
         <strong>All methods must be called on some object</strong>.
       </div>
-      <div class="col-5 border-end border-bottom border-dark">
+      <div class="col-6 border-end border-bottom border-dark">
           <textarea class="language-ruby code-block">
 class Greeting
   def say_hello
@@ -178,7 +185,7 @@ g.say_hello
       </div>
     </div>
     <div class="row">
-      <div class="col-2 border-end border-bottom border-dark">
+      <div class="col-1 border-end border-bottom border-dark">
         <code>return</code>
       </div>
       <div class="col-5 border-end border-bottom border-dark">
@@ -186,7 +193,7 @@ g.say_hello
         stop the execution flow of a method and return a specific value.
         <strong>Note:</strong> values that are returned are not printed by
       </div>
-      <div class="col-5 border-end border-bottom border-dark">
+      <div class="col-6 border-end border-bottom border-dark">
           <textarea class="language-ruby code-block">
 class Addition
   def add_two(number)
@@ -201,14 +208,14 @@ result = add.add_two(3)
       </div>
     </div>
     <div class="row">
-      <div class="col-2 border-end border-bottom border-dark">
+      <div class="col-1 border-end border-bottom border-dark">
         <code>class</code>
       </div>
       <div class="col-5 border-end border-bottom border-dark">
         A <code>class</code> is the blueprint from which individual objects are created.
         Classes allow us to write methods and attributes which can be reused by many objects.
       </div>
-      <div class="col-5 border-end border-bottom border-dark">
+      <div class="col-6 border-end border-bottom border-dark">
           <textarea class="language-ruby code-block">
 class Fruit
   attr_attribute(:name)
@@ -222,18 +229,160 @@ strawberry.color = "red"
       </div>
     </div>
     <div class="row">
-      <div class="col-2 border-end border-bottom border-dark">
+      <div class="col-1 border-end border-bottom border-dark">
 
       </div>
       <div class="col-5 border-end border-bottom border-dark">
 
       </div>
-      <div class="col-5 border-end border-bottom border-dark">
+      <div class="col-6 border-end border-bottom border-dark">
 
       </div>
     </div>
   </div>
 
+  <hr>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1>Ruby Classes</h1>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid border border-dark">
+    <div class="row">
+      <div class="col-1 border-end border-bottom border-dark">Class name</div>
+      <div class="col-5 border-end border-bottom border-dark">Description</div>
+      <div class="col-6 border-end border-bottom border-dark">Example</div>
+    </div>
+    <div class="row">
+      <div class="col-1 border-end border-bottom border-dark">
+        "Boolean"
+      </div>
+      <div class="col-5 border-end border-bottom border-dark">
+        The Boolean data type is a truthy value, either <code>true</code> or <code>false</code>. In Ruby, every value is considered truthy, except <code>nil</code> and <code>false</code>.
+      </div>
+      <div class="col-6 border-end border-bottom border-dark">
+        <textarea class="language-ruby code-block">
+if true
+  p "yes"
+end
+# => "yes"
+if 42
+  p "still yes"
+end
+# => "still yes"
+if nil
+  p "this doesn't print"
+end
+# => 
+        </textarea>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-1 border-end border-bottom border-dark">
+        String
+      </div>
+      <div class="col-5 border-end border-bottom border-dark">
+        Strings are sequences of characters. All input from our users come to us as Strings.
+      </div>
+      <div class="col-6 border-end border-bottom border-dark">
+        <textarea class="language-ruby code-block">   
+String.new # => ""
+"Hello, World" # => "Hello, World" 
+'Hello, World' # => "Hello, World"
+"Hello," + " World" # => "Hello, World"
+        </textarea>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-1 border-end border-bottom border-dark">
+        Integer, Float
+      </div>
+      <div class="col-5 border-end border-bottom border-dark">
+        An integer is any whole number (a number without decimal point).
+        Regular Integer division will return <b>only</b> the whole number, not the remainder.
+        
+        A Float is any number that has a decimal point.
+
+        You can use underscores in place of commas for large numbers.
+      </div>
+      <div class="col-6 border-end border-bottom border-dark">
+        <textarea class="language-ruby code-block">  
+10000000    # Is this 1 million? 100 million?
+10_000_000  # Ah, it's easier to tell now.
+10 / 3      # => 3
+10.0 / 3    # => 3.333..
+        </textarea>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-1 border-end border-bottom border-dark">
+        Array
+      </div>
+      <div class="col-5 border-end border-bottom border-dark">
+        An Array holds a list of objects. We can hold as many objects as we want in a list.
+        In Ruby, each object in the list can be from any class.
+        Typically, with Arrays we add and retreive elements, count the how many elements, or loop over the elements.
+      </div>
+      <div class="col-6 border-end border-bottom border-dark">
+        <textarea class="language-ruby code-block">
+array = ["apple", 42, true, []]
+array.at(0)       # => "apple"
+array.length      # => 4
+array.push(3.141) # => ["apple", 42, true, [], 3.141] 
+        </textarea>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-1 border-end border-bottom border-dark">
+        Symbols
+      </div>
+      <div class="col-5 border-end border-bottom border-dark">
+        Symbols are similar to Strings: they represent a sequence of characters. However, Symbols follow the same rules as variable names:
+        <ul>
+          <li>
+            Cannot contain spaces.
+          </li>
+          <li>
+            Can only contain lowercase letters, underscores, and numbers.
+          </li>
+          <li>
+            Cannot begin with a number.
+          </li>
+        </ul>
+        We use Strings to work with data, while Symbols are used to identify data.
+        Most commonly, we use Symbols as keys in Hashes or as arguments to methods.
+      </div>
+      <div class="col-6 border-end border-bottom border-dark">
+        <textarea class="language-ruby code-block">
+hash = { :key => "value" }
+hash.fetch(:key)   # => "value"
+class Person
+  attr_attribute(:first_name)
+end
+        </textarea>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-1 border-end border-bottom border-dark">
+        Hash
+      </div>
+      <div class="col-5 border-end border-bottom border-dark">
+        A hash is used to store data in the form of uniqye key-value pairs.
+        To retreive or store a value in a Hash, you must use the key.
+      </div>
+      <div class="col-6 border-end border-bottom border-dark">
+        <textarea class="language-ruby code-block">
+h = Hash.new             # => {}
+h.store(:name, "Joyce")  # => { :name => "Joyce"}
+h.store(:job, "Student") # => { :name => "Joyce", :job => "Student"}
+h.fetch(:name)           # => "Joyce"
+        </textarea>
+      </div>
+    </div>
+  </div>
   <script>
     var myTextarea = document.getElementById("editor")
     var codeBlocks = document.getElementsByClassName("code-block")
